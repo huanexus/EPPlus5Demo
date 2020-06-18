@@ -59,5 +59,13 @@ namespace EPPlus5Demo.Huanexus
                 Send(this, new MessageEventArgs(p.ToString()));
             }
         }
+
+        internal void OnMessage(string p)
+        {
+            if (Send != null)
+            {
+                Send(this, new MessageEventArgs(p));
+            }
+        }
     }
 }

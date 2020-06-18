@@ -23,7 +23,7 @@ namespace EPPlus5Demo
         public Form1()
         {
             InitializeComponent();
-            MyLog = new Huanexus.MessageLogger(textBox1);
+            MyLog = new Huanexus.MessageLogger(richTextBox1);
         }
 
         private void button1_Click(object sender, EventArgs e)
