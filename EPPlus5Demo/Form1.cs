@@ -14,7 +14,6 @@ using OfficeOpenXml.Drawing;
 using OfficeOpenXml;
 
 
-
 namespace EPPlus5Demo
 {
     public partial class Form1 : Form
@@ -23,12 +22,11 @@ namespace EPPlus5Demo
         public Form1()
         {
             InitializeComponent();
-            MyLog = new Huanexus.MessageLogger(richTextBox1);
+            MyLog = new Huanexus.MessageLogger(textBox1);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             MyLog.OnMessage("1");
             SaveData();
             MyLog.OnMessage("5");           
